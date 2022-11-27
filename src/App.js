@@ -4,7 +4,7 @@ import CountriesPage from './pages/CountriesPage';
 import HomePage from './pages/HomePage';
 import Navigation from './components/Navigation/Navigation';
 import CountryPage from './pages/CountryPage';
-
+import SearchCountryPage from './pages/SearchCountryPage';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/countries' element={<CountriesPage />} />
         <Route path='/countries/:countryId' element={<CountryPage />} />
+        <Route path='/search' element={<SearchCountryPage />} />
       </Routes>
     </div>
   );

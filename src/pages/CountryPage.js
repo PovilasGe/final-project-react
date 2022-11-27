@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Country from '../components/Country/Country';
 
 const CountryPage = () => {
   let params = useParams();
@@ -13,8 +14,7 @@ const CountryPage = () => {
 
   return (
     <div>
-      {!country ? <h1>Loading...</h1> : <><h1>{country.name.common}</h1><img src={country.flags.png}/>
-      <pre>{JSON.stringify(country,undefined,2)}</pre></>}
+      {!country ? <h1>Loading...</h1> :  <Country country={country}/>}
     </div>
   )
 }

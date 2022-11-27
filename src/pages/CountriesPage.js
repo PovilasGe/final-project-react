@@ -15,7 +15,7 @@ const CountriesPage = () => {
       <h1>All countries page:</h1>
       {countries && (
         <ul>
-          {countries.map((country, index) => <li key={index}>{country.name.common}</li>)}
+          {countries.map((country, index) => <li key={index}><Link to={'/countries/' + country.cca2}>{country.name.common}</Link></li>)}
         </ul>
       )}
     </div>

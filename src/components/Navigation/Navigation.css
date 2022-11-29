@@ -1,0 +1,28 @@
+.navigation{
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(125, 184, 105, 0.8);
+    box-shadow: 0px 10px 20px 5px #2a442a;
+}
+@media screen and (max-width: 800px) {
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+.navigation-link{
+    padding: 10px;
+    color: rgba(36, 37, 36, 0.8);;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+}
+.navigation-link:hover{
+    background-color:rgba(184, 201, 49, 0.8)
+    
+}

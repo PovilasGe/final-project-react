@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import Navigation from './components/Navigation/Navigation';
 import CountryPage from './pages/CountryPage';
 import SearchCountryPage from './pages/SearchCountryPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/countries/:countryId' element={<CountryPage />} />
         <Route path='/search' element={<SearchCountryPage />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

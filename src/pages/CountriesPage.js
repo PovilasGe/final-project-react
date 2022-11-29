@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import "./CountriesPage.css"
 
 const CountriesPage = () => {
   const [countries, setCountries] = useState([]);
@@ -11,8 +12,8 @@ const CountriesPage = () => {
   }, []);
 
   return (
-    <div>
-      <h1>All countries page:</h1>
+    <div className= 'wrapper'>
+      <h1>COUNTRIES LIST:</h1>
       {countries && (
         <ul>
           {countries.map((country, index) => <li key={index}><Link to={'/countries/' + country.cca2}>{country.name.common}</Link></li>)}

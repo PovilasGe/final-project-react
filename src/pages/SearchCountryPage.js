@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import Country from '../components/Country/Country';
+import './SearchCountryPage.css'
 
 const SearchCountryPage = () => {
   
@@ -10,15 +11,23 @@ const SearchCountryPage = () => {
   const [loadingFinished, setLoadingFinished] =useState(true);
   const getPageContent = () =>{
     if (!loadingFinished) {
-      return 'Loading...'
+      return (
+        <div>
+        <p className='return'>Loading...</p>
+        </div>
+      );
     }
     if (errorOccurred) {
-      return 'No country found :('
+      return (
+        <div>
+        <p className='return'>No country found 😞</p>
+        </div>
+      );
     }
     if (!!country) {
       return  <Country country={country}/>
     }
-    return 'Enter country'
+    return ''
   }
 
   const submitHandler = (event) => {
@@ -46,9 +55,9 @@ const SearchCountryPage = () => {
       <h1 className='page-title'>Search Country Page</h1>
 
       <form onSubmit={submitHandler}>
-        <label htmlFor='search-term-input'>Enter your country: </label>
-        <input type='text' id='search-term-input' value={searchTerm} onChange={searchTermInputHandler} />
-        <input type='submit' value='Search' />
+        <label id='label' htmlFor='search-term-input'>Enter your country: </label>
+        <input type='text' id='search' value={searchTerm} onChange={searchTermInputHandler} />
+        <input type='submit' id='button' value='Search' />
       </form>
 
       {getPageContent()}

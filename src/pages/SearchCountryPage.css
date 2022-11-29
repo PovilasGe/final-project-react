@@ -1,0 +1,46 @@
+.main-content{
+    
+    background-color: #27503ce1;
+    padding: 70px 50px;
+}
+
+.main-content h1{
+    color: rgb(31, 221, 94);  
+}
+
+.return{
+    font-size: 2em;
+    line-height: 1.7em;
+    font-weight: 3600;
+    margin-bottom: 28px;
+    word-break: break-word;
+    color: rgb(214, 16, 16);
+}
+
+
+#label{
+    font-size: 1.2em;
+    line-height: 1.7em;
+    font-weight: 500;
+    margin-bottom: 28px;
+    word-break: break-word;
+    color: yellow;
+ }
+ 
+#search {
+    background-color: white;
+    margin-left: 20px;
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: solid;
+    font-weight: bold;
+ }
+ #button{
+    background-color: white;
+    margin-left: 20px;
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: solid;
+    font-weight: bold;
+ }
+

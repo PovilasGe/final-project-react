@@ -1,0 +1,7 @@
+body{
+    background-image: url('./img/Main.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
